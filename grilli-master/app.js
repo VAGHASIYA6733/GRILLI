@@ -1951,102 +1951,73 @@ const cafes_inner = [
   },
 ];
 
-// cafes_inner.forEach((cafe) => {
-//   const cardContainer = document.createElement("div");
-//   cardContainer.classList.add("col");
 
-//   const card = document.createElement("div");
-//   card.classList.add("card", "h-100");
-//   card.innerHTML = `
-//       <img src="${cafe.image}" class="card-img-top" alt="..." />
-//       <div class="card-body">
-//         <h5 class="card-title">${cafe.name}</h5>
-//         <p class="card-text">
-//           "${cafe.description}"
-//         </p>
-//       </div>
-//       <div class="card-footer">
-//         <button class="learn-more" onclick="viewMore(${cafe.id})">
-//           <span class="circle" aria-hidden="true">
-//             <span class="icon arrow"></span>
-//           </span>
-//           <span class="button-text">View More</span>
-//         </button>
-//       </div>
-//     `;
-//   cardContainer.appendChild(card);
-//   container.appendChild(cardContainer);
-// });
-
-// function viewMore(id) {
-//   // Assuming you have another HTML file named "cafe-detail.html" for detailed cafe information
-//   window.location.href = `cafe-detail.html?id=${id}`;
-// }
 const itemsPerPage = 6;
 let now = 1;
 
+
 function paginate(array, page_size, page_number) {
-  return array.slice((page_number - 1) * page_size, page_number * page_size);
-}
-
-function renderCafeCards() {
-  const container = document.getElementById("cafeCardsContainer");
-  container.innerHTML = "";
-
-  const paginatedCafes = paginate(cafes_inner, itemsPerPage, now);
-
-  paginatedCafes.forEach((cafe) => {
-    const cardContainer = document.createElement("div");
-    cardContainer.classList.add("col");
-
-    const card = document.createElement("div");
-    card.classList.add("card", "h-100");
-    card.innerHTML = `
-        <img src="${cafe.image}" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">${cafe.name}</h5>
-          <p class="card-text">
-            "${cafe.description}"
-          </p>
-        </div>
-        <div class="card-footer">
-          <button class="learn-more" onclick="viewMore(${cafe.id})">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <span class="button-text" >View More</span>
-          </button>
-        </div>
-      `;
-    cardContainer.appendChild(card);
-    container.appendChild(cardContainer);
-  });
-}
-
-function viewMore(id) {
-  // Assuming you have another HTML file named "cafe-detail.html" for detailed cafe information
-  window.location.href = `cafe-detail.html?id=${id}`;
-}
-
-function renderPaginationButtons() {
-  const paginationContainer = document.getElementById("pagination-buttons");
-  paginationContainer.innerHTML = "";
-
-  const totalPages = Math.ceil(cafes_inner.length / itemsPerPage);
-
-  for (let i = 1; i <= totalPages; i++) {
-    const button = document.createElement("button");
-    button.classList.add("btn", "btn-primary");
-    button.innerText = i;
-    button.addEventListener("click", () => {
-      now = i;
-      renderCafeCards();
-      renderPaginationButtons();
-    });
-    paginationContainer.appendChild(button);
+    return array.slice((page_number - 1) * page_size, page_number * page_size);
   }
-}
-
-// Initial render
-renderCafeCards();
-renderPaginationButtons();
+  
+  function renderCafeCards() {
+    const container = document.getElementById("cafeCardsContainer");
+    container.innerHTML = "";
+  
+    const paginatedCafes = paginate(cafes_inner, itemsPerPage, now);
+  
+    paginatedCafes.forEach((cafe) => {
+      const cardContainer = document.createElement("div");
+      cardContainer.classList.add("col");
+  
+      const card = document.createElement("div");
+      card.classList.add("card", "h-100");
+      card.innerHTML = `
+          <img src="${cafe.image}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">${cafe.name}</h5>
+            <p class="card-text">
+              "${cafe.description}"
+            </p>
+          </div>
+          <div class="card-footer">
+            <button class="learn-more" onclick="viewMore(${cafe.id})">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text" >View More</span>
+            </button>
+          </div>
+        `;
+      cardContainer.appendChild(card);
+      container.appendChild(cardContainer);
+    });
+  }
+  
+  function viewMore(id) {
+    // Assuming you have another HTML file named "cafe-detail.html" for detailed cafe information
+    window.location.href = `cafe-detail.html?id=${id}`;
+  }
+  
+  function renderPaginationButtons() {
+    const paginationContainer = document.getElementById("pagination-buttons");
+    paginationContainer.innerHTML = "";
+  
+    const totalPages = Math.ceil(cafes_inner.length / itemsPerPage);
+  
+    for (let i = 1; i <= totalPages; i++) {
+      const button = document.createElement("button");
+      button.classList.add("btn", "btn-primary");
+      button.innerText = i;
+      button.addEventListener("click", () => {
+        now = i;
+        renderCafeCards();
+        renderPaginationButtons();
+      });
+      paginationContainer.appendChild(button);
+    }
+  }
+  
+  // Initial render
+  renderCafeCards();
+  renderPaginationButtons();

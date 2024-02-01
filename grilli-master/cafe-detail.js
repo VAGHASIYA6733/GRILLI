@@ -2094,21 +2094,6 @@ const cafes = [{
   
   container.appendChild(detailCard);
   
-  // Display additional images
-  if (selectedCafe.otherimage && selectedCafe.otherimage.length > 0) {
-    const imageContainer = document.createElement('div');
-    imageContainer.classList.add('image-container', 'mt-4');
-  
-    selectedCafe.otherimage.forEach(imageSrc => {
-      const image = document.createElement('img');
-      image.classList.add('additional-image');
-      image.src = imageSrc;
-      imageContainer.appendChild(image);
-    });
-  
-    container.appendChild(imageContainer);
-  }
-  
   function goBack() {
     // Navigate back to the previous page
     window.history.back();
