@@ -1,1128 +1,1115 @@
 :root {
-    --primary: #2175f5;
+  --primary: #2175f5;
 }
 
 body {
-    user-select: none;
-    background-color: #262626 !important;
+  user-select: none;
+  background-color: #262626 !important;
 }
 
 .background-section {
-    position: relative;
-    background: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-    /* overflow: hidden; */
+  position: relative;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  /* overflow: hidden; */
 }
 
 .container {
-    /* min-height: 100vh; */
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    /* padding: 40px; */
-    /* overflow: hidden; */
+  /* min-height: 100vh; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* padding: 40px; */
+  /* overflow: hidden; */
 }
 
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 860px; */
-    border: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 860px; */
+  border: none !important;
 }
 
 .main_card {
-    background: none !important;
-    flex-direction: row !important;
+  background: none !important;
+  flex-direction: row !important;
 }
 
 .shoeBackground {
-    position: relative;
-    width: 50%;
-    height: 475px;
-    box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1),
-        0 -15px 35px rgba(0, 0, 0, 0.1),
-        0 15px 35px rgba(0, 0, 0, 0.1);
-    transition: .5s;
+  position: relative;
+  width: 50%;
+  height: 475px;
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
 }
 
 .gradients {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 .gradient {
-    position: absolute;
-    width: 100%;
-    border-radius: 20px 0px 0px 20px;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: -2;
+  position: absolute;
+  width: 100%;
+  border-radius: 20px 0px 0px 20px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -2;
 }
 
 .first {
-    z-index: 0;
-    animation: 1s width ease;
+  z-index: 0;
+  animation: 1s width ease;
 }
 
 @keyframes width {
-    from {
-        width: 0%;
-    }
+  from {
+    width: 0%;
+  }
 
-    to {
-        width: 100%;
-    }
+  to {
+    width: 100%;
+  }
 }
 
 .second {
-    z-index: -1;
+  z-index: -1;
 }
 
 .gradient[color="blue"] {
-    background-image: linear-gradient(45deg, #0136af, #22abfa);
+  background-image: linear-gradient(45deg, #0136af, #22abfa);
 }
 
 .gradient[color="red"] {
-    background-image: linear-gradient(45deg, #d62926, #ee625f);
+  background-image: linear-gradient(45deg, #d62926, #ee625f);
 }
 
 .gradient[color="green"] {
-    background-image: linear-gradient(45deg, #11998e, #1ce669);
+  background-image: linear-gradient(45deg, #11998e, #1ce669);
 }
 
 .gradient[color="orange"] {
-    background-image: linear-gradient(45deg, #fc4a1a, #f7b733);
+  background-image: linear-gradient(45deg, #fc4a1a, #f7b733);
 }
 
 .gradient[color="black"] {
-    background-image: linear-gradient(45deg, #111, #666);
+  background-image: linear-gradient(45deg, #111, #666);
 }
 
 .logo {
-    position: absolute;
-    width: 100px;
-    left: 20px;
-    top: 20px;
+  position: absolute;
+  width: 100px;
+  left: 20px;
+  top: 20px;
 }
 
 .share {
-    position: absolute;
-    top: 15px;
-    z-index: 1;
-    right: 15px;
-    /* background-color: #fff; */
-    border-radius: 50%;
-    text-align: center;
-    font-size: 1.3rem;
-    text-decoration: none;
-    /* color: var(--primary); */
-    transition: .5s;
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  right: 15px;
+  /* background-color: #fff; */
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  /* color: var(--primary); */
+  transition: 0.5s;
 }
 
 .share:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .share i {
-    line-height: 50px;
+  line-height: 50px;
 }
 
 .nike {
-    position: absolute;
-    top: 85px;
-    left: 15px;
-    font-size: 11rem;
-    text-transform: uppercase;
-    line-height: .9;
-    color: #fff;
-    opacity: .1;
+  position: absolute;
+  top: 85px;
+  left: 15px;
+  font-size: 11rem;
+  text-transform: uppercase;
+  line-height: 0.9;
+  color: #fff;
+  opacity: 0.1;
 }
 
 .shoe {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    bottom: 0;
-    right: 0;
-    transition: .5s;
-    border-radius: 20px 0px 0px 20px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  transition: 0.5s;
+  border-radius: 20px 0px 0px 20px;
 }
 
 .shoe.show {
-    opacity: 1;
+  opacity: 1;
 }
 
 .info {
-    width: 50%;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px white inset;
-    z-index: 1;
-    border-radius: 0px 20px 20px 0px;
-    padding: 10px 20px;
+  width: 50%;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white inset;
+  z-index: 1;
+  border-radius: 0px 20px 20px 0px;
+  padding: 10px 20px;
 }
 
-
 .shoeName {
-    padding: 0 0 10px 0;
+  padding: 0 0 10px 0;
 }
 
 .shoeName div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .shoeName div .big {
-    margin-right: 10px;
-    font-size: 2rem;
-    color: hsl(38, 61%, 73%);
-    line-height: 1;
+  margin-right: 10px;
+  font-size: 2rem;
+  color: hsl(38, 61%, 73%);
+  line-height: 1;
 }
 
 .shoeName .small {
-    font-weight: 100;
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: whitesmoke;
-    margin-top: 3px;
-    text-transform: capitalize;
+  font-weight: 100;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: whitesmoke;
+  margin-top: 3px;
+  text-transform: capitalize;
 }
 
 .shoeName,
 .description,
 .color-container,
 .size-container {
-    border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
 }
 
 .description {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .title {
-    color: whitesmoke;
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .text {
-    color: whitesmoke;
-    font-size: 13px;
-    letter-spacing: 2px;
+  color: whitesmoke;
+  font-size: 13px;
+  letter-spacing: 2px;
 }
 
 .color-container {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .colors {
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .color {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .color img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px #2175f5;
-    cursor: pointer;
-    transition: .5s;
-    object-fit: fill;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #2175f5;
+  cursor: pointer;
+  transition: 0.5s;
+  object-fit: fill;
 }
 
 .color_2 img {
-    box-shadow: 0 0 10px #f84848;
+  box-shadow: 0 0 10px #f84848;
 }
 
 .color_3 img {
-    box-shadow: 0 0 10px #29b864;
+  box-shadow: 0 0 10px #29b864;
 }
 
 .color_4 img {
-    box-shadow: 0 0 10px #ff5521;
+  box-shadow: 0 0 10px #ff5521;
 }
 
 .color_5 img {
-    box-shadow: 0 0 10px #b5b5b5;
+  box-shadow: 0 0 10px #b5b5b5;
 }
 
 .color.active {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-
-
 .buy-price {
-    padding-top: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .price {
-    color: whitesmoke;
-    display: flex;
-    align-items: flex-start;
+  color: whitesmoke;
+  display: flex;
+  align-items: flex-start;
 }
 
 .price h1 {
-    font-size: 2.1rem;
-    font-weight: 600;
-    line-height: 1;
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .price i {
-    font-size: 1.4rem;
-    margin-right: 1px;
+  font-size: 1.4rem;
+  margin-right: 1px;
 }
-
 
 /* Menu Button */
 .buy {
-    position: relative;
-    color: white;
-    width: 155px;
-    height: 50px;
-    margin: 20px;
+  position: relative;
+  color: white;
+  width: 155px;
+  height: 50px;
+  margin: 20px;
 }
 
 .buy .menu_btn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-2);
-    box-shadow: 0 15px 35px var(--color-3);
-    border-top: 1px solid var(--color-4);
-    border-bottom: 1px solid var(--color-4);
-    border-radius: 30px;
-    color: var(--color-white);
-    z-index: 1;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.8s;
-    backdrop-filter: blur(15px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-2);
+  box-shadow: 0 15px 35px var(--color-3);
+  border-top: 1px solid var(--color-4);
+  border-bottom: 1px solid var(--color-4);
+  border-radius: 30px;
+  color: var(--color-white);
+  z-index: 1;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.8s;
+  backdrop-filter: blur(15px);
 }
 
 .buy:hover .menu_btn {
-    letter-spacing: 3px;
+  letter-spacing: 3px;
 }
 
 .buy .menu_btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to left, var(--color-gradient-1), transparent);
-    transform: skewX(45deg) translateX(0);
-    transition: 0.8s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, var(--color-gradient-1), transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.8s;
 }
 
 .buy:hover .menu_btn::before {
-    transform: skewX(45deg) translateX(200%);
+  transform: skewX(45deg) translateX(200%);
 }
 
 .buy::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -5px;
-    width: 30px;
-    height: 10px;
-    background: red;
-    border-radius: 10px;
-    transition: 0.8s;
-    transition-delay: 0s;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 30px;
+  height: 10px;
+  background: red;
+  border-radius: 10px;
+  transition: 0.8s;
+  transition-delay: 0s;
 }
 
 .buy:hover::before {
-    bottom: 0;
-    height: 50%;
-    width: 80%;
-    border-radius: 30px;
-    transition-delay: 0.5s;
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
 }
 
-
 .buy::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -5px;
-    width: 30px;
-    height: 10px;
-    background: red;
-    border-radius: 10px;
-    transition: 0.8s;
-    transition-delay: 0s;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  width: 30px;
+  height: 10px;
+  background: red;
+  border-radius: 10px;
+  transition: 0.8s;
+  transition-delay: 0s;
 }
 
 .buy:hover::after {
-    top: 0;
-    height: 50%;
-    width: 80%;
-    border-radius: 30px;
-    transition-delay: 0.5s;
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
 }
 
 .buy:nth-child(1)::before,
 .buy:nth-child(1)::after {
-    background: #ff1f71;
-    box-shadow: 0 0 5px #ff1f71,
-        0 0 15px #ff1f71,
-        0 0 30px #ff1f71,
-        0 0 60px #ff1f71;
+  background: #ff1f71;
+  box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+    0 0 60px #ff1f71;
 }
 
 /* Modal Table Book */
 .modal {
-    backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 
 .modal-content {
-    background: transparent !important;
-    border: 2px solid wheat !important;
-    color: wheat !important;
-    box-shadow: 0 0 10px wheat inset !important;
+  background: transparent !important;
+  border: 2px solid wheat !important;
+  color: wheat !important;
+  box-shadow: 0 0 10px wheat inset !important;
 }
 
 #btn-close_button {
-    color: white !important;
-    --bs-btn-close-color: white !important;
-    opacity: 1 !important;
-    background-color: white;
-    border: 2px solid wheat !important;
+  color: white !important;
+  --bs-btn-close-color: white !important;
+  opacity: 1 !important;
+  background-color: white;
+  border: 2px solid wheat !important;
 }
 
 .form-control,
 .form-select {
-    color: whitesmoke !important;
-    background: transparent !important;
-    border: 2px solid wheat !important;
+  color: whitesmoke !important;
+  background: transparent !important;
+  border: 2px solid wheat !important;
 }
 
 option {
-    color: black !important;
+  color: black !important;
 }
 
 /* Modal Table Book End */
 
-
-
 /* Buy_2 */
 .buy_2 {
-    position: relative;
-    color: white;
-    width: 155px;
-    height: 50px;
-    margin: 20px;
+  position: relative;
+  color: white;
+  width: 155px;
+  height: 50px;
+  margin: 20px;
 }
 
 .buy_2 .menu_btn_2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-2);
-    box-shadow: 0 15px 35px var(--color-3);
-    border-top: 1px solid var(--color-4);
-    border-bottom: 1px solid var(--color-4);
-    border-radius: 30px;
-    color: var(--color-white);
-    z-index: 1;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.8s;
-    backdrop-filter: blur(15px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-2);
+  box-shadow: 0 15px 35px var(--color-3);
+  border-top: 1px solid var(--color-4);
+  border-bottom: 1px solid var(--color-4);
+  border-radius: 30px;
+  color: var(--color-white);
+  z-index: 1;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.8s;
+  backdrop-filter: blur(15px);
 }
 
 .buy_2:hover .menu_btn_2 {
-    letter-spacing: 3px;
+  letter-spacing: 3px;
 }
 
 .buy_2 .menu_btn_2::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to left, var(--color-gradient-1), transparent);
-    transform: skewX(45deg) translateX(0);
-    transition: 0.8s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, var(--color-gradient-1), transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.8s;
 }
 
 .buy_2:hover .menu_btn_2::before {
-    transform: skewX(45deg) translateX(200%);
+  transform: skewX(45deg) translateX(200%);
 }
 
 .buy_2::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -5px;
-    width: 30px;
-    height: 10px;
-    background: red;
-    border-radius: 10px;
-    transition: 0.8s;
-    transition-delay: 0s;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 30px;
+  height: 10px;
+  background: red;
+  border-radius: 10px;
+  transition: 0.8s;
+  transition-delay: 0s;
 }
 
 .buy_2:hover::before {
-    bottom: 0;
-    height: 50%;
-    width: 80%;
-    border-radius: 30px;
-    transition-delay: 0.5s;
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
 }
 
-
 .buy_2::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -5px;
-    width: 30px;
-    height: 10px;
-    background: red;
-    border-radius: 10px;
-    transition: 0.8s;
-    transition-delay: 0s;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  width: 30px;
+  height: 10px;
+  background: red;
+  border-radius: 10px;
+  transition: 0.8s;
+  transition-delay: 0s;
 }
 
 .buy_2:hover::after {
-    top: 0;
-    height: 50%;
-    width: 80%;
-    border-radius: 30px;
-    transition-delay: 0.5s;
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
 }
 
 .buy_2:nth-child(1)::before,
 .buy_2:nth-child(1)::after {
-    background: #2bd2ff;
-    box-shadow: 0 0 5px #2bd2ff,
-        0 0 15px #2bd2ff,
-        0 0 30px #2bd2ff,
-        0 0 60px #2bd2ff;
+  background: #2bd2ff;
+  box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff,
+    0 0 60px #2bd2ff;
 }
 
 @media (max-width: 1070px) {
-    .shoe {
-        width: 100%;
-    }
+  .shoe {
+    width: 100%;
+  }
 
-    .shoeBackground {
-        height: 508px !important;
-        object-fit: cover !important;
-    }
+  .shoeBackground {
+    height: 508px !important;
+    object-fit: cover !important;
+  }
 
-    .like-button {
-        font-size: 12vmin !important;
-    }
+  .like-button {
+    font-size: 12vmin !important;
+  }
 }
 
 @media (max-width: 1000px) {
-    .main_card {
-        flex-direction: column !important;
-        width: 100%;
-        box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.2);
-    }
+  .main_card {
+    flex-direction: column !important;
+    width: 100%;
+    box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.2);
+  }
 
-    .main_card>div {
-        width: 100%;
-        box-shadow: none;
-    }
+  .main_card > div {
+    width: 100%;
+    box-shadow: none;
+  }
 
-    .shoe {
-        width: 100%;
-    }
+  .shoe {
+    width: 100%;
+  }
 
-    .color {
-        margin: 0 10px;
-    }
+  .color {
+    margin: 0 10px;
+  }
 }
 
 @media (max-width: 600px) {
-    .share {
-        width: 40px;
-        height: 40px;
-    }
+  .share {
+    width: 40px;
+    height: 40px;
+  }
 
-    .share i {
-        font-size: 1rem;
-        line-height: 40px;
-    }
+  .share i {
+    font-size: 1rem;
+    line-height: 40px;
+  }
 
-    .logo {
-        width: 70px;
-    }
+  .logo {
+    width: 70px;
+  }
 }
 
 @media (max-width: 490px) {
+  .row {
+    width: 100% !important;
+  }
 
-    .row {
-        width: 100% !important;
-    }
+  .main_card {
+    width: 100% !important;
+  }
 
-    .main_card {
-        width: 100% !important;
-    }
+  .shoe {
+    border-radius: 0px !important;
+  }
 
-    .shoe {
-        border-radius: 0px !important;
-    }
+  .info {
+    border-radius: 0px !important;
+    box-shadow: 0 0 10px white inset !important;
+  }
 
-    .info {
-        border-radius: 0px !important;
-        box-shadow: 0 0 10px white inset !important;
-    }
+  .Ads {
+    width: 100% !important;
+    height: auto !important;
+  }
 
-    .Ads {
-        width: 100% !important;
-        height: auto !important;
-    }
+  .shoeName div .big {
+    font-size: 1.3rem;
+  }
 
-    .shoeName div .big {
-        font-size: 1.3rem;
-    }
+  .small {
+    font-size: 1rem;
+  }
 
-    .small {
-        font-size: 1rem;
-    }
+  .title {
+    font-size: 0.9rem;
+  }
 
-    .title {
-        font-size: .9rem;
-    }
+  .text {
+    font-size: 0.8rem;
+  }
 
-    .text {
-        font-size: .8rem;
-    }
+  .buy {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
 
-    .buy {
-        padding: .5rem .8rem;
-        font-size: .8rem;
-    }
+  .price h1 {
+    font-size: 1.5rem;
+  }
 
-    .price h1 {
-        font-size: 1.5rem;
-    }
+  .price i {
+    font-size: 0.9rem;
+  }
 
-    .price i {
-        font-size: .9rem;
-    }
+  .size {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    font-size: 0.9rem;
+    line-height: 30px;
+  }
 
-    .size {
-        width: 30px;
-        height: 30px;
-        margin: 0 8px;
-        font-size: .9rem;
-        line-height: 30px;
-    }
+  .color {
+    margin: 0 15px;
+    width: 0 20px;
+    width: 20px;
+    height: 20px;
+    border-width: 4px;
+  }
 
-    .color {
-        margin: 0 15px;
-        width: 0 20px;
-        width: 20px;
-        height: 20px;
-        border-width: 4px;
-    }
+  .share {
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    right: 42px !important;
+  }
 
-    .share {
-        width: 25px;
-        height: 25px;
-        top: 10px;
-        right: 42px !important;
-    }
+  .share i {
+    font-size: 0.8rem;
+    line-height: 35px;
+  }
 
-    .share i {
-        font-size: .8rem;
-        line-height: 35px;
-    }
+  .logo {
+    width: 60px;
+    top: 10px;
+    left: 10px;
+  }
 
-    .logo {
-        width: 60px;
-        top: 10px;
-        left: 10px;
-    }
-
-    .info {
-        padding: 20px;
-    }
+  .info {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 400px) {
-    .buy i {
-        display: none;
-    }
+  .buy i {
+    display: none;
+  }
 
-    .container {
-        padding: 20px;
-    }
+  .container {
+    padding: 20px;
+  }
 
-    .share {
-        width: 25px;
-        height: 25px;
-        top: 10px;
-        right: 30px !important;
-    }
-
+  .share {
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    right: 30px !important;
+  }
 }
 
 *,
 *:before,
 *:after {
-    position: relative;
-    box-sizing: border-box;
+  position: relative;
+  box-sizing: border-box;
 }
 
 :root {
-    --color-bg: #FDF1F2;
-    --color-heart: #EA442B;
-    --easing: cubic-bezier(.7, 0, .3, 1);
-    --duration: .5s;
+  --color-bg: #fdf1f2;
+  --color-heart: #ea442b;
+  --easing: cubic-bezier(0.7, 0, 0.3, 1);
+  --duration: 0.5s;
 }
 
 .like-button {
-    font-size: 6vmin;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    border-radius: 50%;
-    background: white;
-    width: 1em;
-    height: 1em;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    z-index: 2;
-    -webkit-transition: -webkit-transform var(--duration) var(--easing);
-    transition: -webkit-transform var(--duration) var(--easing);
-    transition: transform var(--duration) var(--easing);
-    transition: transform var(--duration) var(--easing), -webkit-transform var(--duration) var(--easing);
-    cursor: pointer;
+  font-size: 6vmin;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  z-index: 2;
+  -webkit-transition: -webkit-transform var(--duration) var(--easing);
+  transition: -webkit-transform var(--duration) var(--easing);
+  transition: transform var(--duration) var(--easing);
+  transition: transform var(--duration) var(--easing),
+    -webkit-transform var(--duration) var(--easing);
+  cursor: pointer;
 }
 
 .like-button:before {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);
-    border-radius: inherit;
-    -webkit-transition: inherit;
-    transition: inherit;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);
+  border-radius: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
 }
 
 .like-button:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    border-radius: inherit;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: inherit;
+  z-index: -1;
 }
 
 .like-button:active:before {
-    -webkit-animation: depress-shadow var(--duration) var(--easing) both;
-    animation: depress-shadow var(--duration) var(--easing) both;
+  -webkit-animation: depress-shadow var(--duration) var(--easing) both;
+  animation: depress-shadow var(--duration) var(--easing) both;
 }
 
 .like-button:focus:after {
-    -webkit-animation: depress var(--duration) var(--easing) both;
-    animation: depress var(--duration) var(--easing) both;
+  -webkit-animation: depress var(--duration) var(--easing) both;
+  animation: depress var(--duration) var(--easing) both;
 }
 
 @-webkit-keyframes depress {
+  from,
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
 
-    from,
-    to {
-        -webkit-transform: none;
-        transform: none;
-    }
-
-    50% {
-        -webkit-transform: translateY(5%) scale(0.9);
-        transform: translateY(5%) scale(0.9);
-    }
+  50% {
+    -webkit-transform: translateY(5%) scale(0.9);
+    transform: translateY(5%) scale(0.9);
+  }
 }
 
 @keyframes depress {
+  from,
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
 
-    from,
-    to {
-        -webkit-transform: none;
-        transform: none;
-    }
-
-    50% {
-        -webkit-transform: translateY(5%) scale(0.9);
-        transform: translateY(5%) scale(0.9);
-    }
+  50% {
+    -webkit-transform: translateY(5%) scale(0.9);
+    transform: translateY(5%) scale(0.9);
+  }
 }
 
 @-webkit-keyframes depress-shadow {
+  from,
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
 
-    from,
-    to {
-        -webkit-transform: none;
-        transform: none;
-    }
-
-    50% {
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5);
-    }
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
 }
 
 @keyframes depress-shadow {
+  from,
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
 
-    from,
-    to {
-        -webkit-transform: none;
-        transform: none;
-    }
-
-    50% {
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5);
-    }
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
 }
 
 .like-wrapper {
-    display: grid;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    z-index: 1;
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  z-index: 1;
 }
 
-.like-wrapper>* {
-    margin: auto;
-    grid-area: 1 / 1;
+.like-wrapper > * {
+  margin: auto;
+  grid-area: 1 / 1;
 }
 
 .heart {
-    width: .5em;
-    height: .5em;
-    display: block;
-    -webkit-transform-origin: center 80%;
-    transform-origin: center 80%;
+  width: 0.5em;
+  height: 0.5em;
+  display: block;
+  -webkit-transform-origin: center 80%;
+  transform-origin: center 80%;
 }
 
-.heart>path {
-    stroke: var(--color-heart);
-    stroke-width: 2;
-    fill: transparent;
-    -webkit-transition: fill var(--duration) var(--easing);
-    transition: fill var(--duration) var(--easing);
+.heart > path {
+  stroke: var(--color-heart);
+  stroke-width: 2;
+  fill: transparent;
+  -webkit-transition: fill var(--duration) var(--easing);
+  transition: fill var(--duration) var(--easing);
 }
 
-.like-button:focus .heart>path {
-    fill: var(--color-heart);
+.like-button:focus .heart > path {
+  fill: var(--color-heart);
 }
 
 .like-button:focus .heart {
-    -webkit-animation: heart-bounce var(--duration) var(--easing);
-    animation: heart-bounce var(--duration) var(--easing);
+  -webkit-animation: heart-bounce var(--duration) var(--easing);
+  animation: heart-bounce var(--duration) var(--easing);
 }
 
 @-webkit-keyframes heart-bounce {
-    40% {
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
+  40% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
 
-    0%,
-    80%,
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 @keyframes heart-bounce {
-    40% {
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
+  40% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
 
-    0%,
-    80%,
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 /* Added wrapper to prevent layout jank with resizing particles */
 .particles {
-    width: 1px;
-    height: 1px;
+  width: 1px;
+  height: 1px;
 }
 
 .particle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: .1em;
-    width: .1em;
-    border-radius: .05em;
-    background-color: var(--color);
-    --percentage: calc(var(--i) / var(--total-particles));
-    --Θ: calc(var(--percentage) * 1turn);
-    -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0) scaleY(0);
-    transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0) scaleY(0);
-    -webkit-transition: all var(--duration) var(--easing);
-    transition: all var(--duration) var(--easing);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.1em;
+  width: 0.1em;
+  border-radius: 0.05em;
+  background-color: var(--color);
+  --percentage: calc(var(--i) / var(--total-particles));
+  --Θ: calc(var(--percentage) * 1turn);
+  -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0)
+    scaleY(0);
+  transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0) scaleY(0);
+  -webkit-transition: all var(--duration) var(--easing);
+  transition: all var(--duration) var(--easing);
 }
 
 .like-button:focus .particle {
-    -webkit-animation: particles-out calc(var(--duration) * 1.2) var(--easing) forwards;
-    animation: particles-out calc(var(--duration) * 1.2) var(--easing) forwards;
+  -webkit-animation: particles-out calc(var(--duration) * 1.2) var(--easing)
+    forwards;
+  animation: particles-out calc(var(--duration) * 1.2) var(--easing) forwards;
 }
 
 @-webkit-keyframes particles-out {
-    50% {
-        height: .3em;
-    }
+  50% {
+    height: 0.3em;
+  }
 
-    50%,
-    60% {
-        height: .3em;
-        -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0.8em) scale(1);
-        transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0.8em) scale(1);
-    }
+  50%,
+  60% {
+    height: 0.3em;
+    -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0.8em)
+      scale(1);
+    transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0.8em) scale(1);
+  }
 
-    60% {
-        height: .2em;
-    }
+  60% {
+    height: 0.2em;
+  }
 
-    100% {
-        -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(1em) scale(0);
-        transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(1em) scale(0);
-    }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(1em)
+      scale(0);
+    transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(1em) scale(0);
+  }
 }
 
 @keyframes particles-out {
-    50% {
-        height: .3em;
-    }
+  50% {
+    height: 0.3em;
+  }
 
-    50%,
-    60% {
-        height: .3em;
-        -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0.8em) scale(1);
-        transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0.8em) scale(1);
-    }
+  50%,
+  60% {
+    height: 0.3em;
+    -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0.8em)
+      scale(1);
+    transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(0.8em) scale(1);
+  }
 
-    60% {
-        height: .2em;
-    }
+  60% {
+    height: 0.2em;
+  }
 
-    100% {
-        -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(1em) scale(0);
-        transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(1em) scale(0);
-    }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(1em)
+      scale(0);
+    transform: translate(-50%, -50%) rotate(var(--Θ)) translateY(1em) scale(0);
+  }
 }
 
 .ripple {
-    /* height: 1em;
+  /* height: 1em;
   width: 1em; */
-    border-radius: 50%;
-    overflow: hidden;
-    z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .ripple:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0.4em solid var(--color-heart);
-    border-radius: inherit;
-    -webkit-transform: scale(0);
-    transform: scale(0);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0.4em solid var(--color-heart);
+  border-radius: inherit;
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 
 .like-button:focus .ripple:before {
-    -webkit-animation: ripple-out var(--duration) var(--easing);
-    animation: ripple-out var(--duration) var(--easing);
+  -webkit-animation: ripple-out var(--duration) var(--easing);
+  animation: ripple-out var(--duration) var(--easing);
 }
 
 @-webkit-keyframes ripple-out {
-    from {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
 
-    to {
-        -webkit-transform: scale(5);
-        transform: scale(5);
-    }
+  to {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+  }
 }
 
 @keyframes ripple-out {
-    from {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
 
-    to {
-        -webkit-transform: scale(5);
-        transform: scale(5);
-    }
+  to {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+  }
 }
 
 /* Reset the animation when clicking again! */
 .like-button:focus {
-    pointer-events: none;
-    cursor: normal;
+  pointer-events: none;
+  cursor: normal;
 }
-
 
 /* Back Button Start  */
 .back_btn {
-    position: relative;
-    z-index: 2;
-    top: 0%;
-    /* left: 3%; */
-    margin: 20px;
+  position: relative;
+  z-index: 2;
+  top: 0%;
+  /* left: 3%; */
+  margin: 20px;
 }
 
 .back {
-    position: absolute;
-    display: inline-block;
-    top: -22px;
-    text-decoration: none;
-    padding: 10px 10px 10px 40px;
+  position: absolute;
+  display: inline-block;
+  top: -22px;
+  text-decoration: none;
+  padding: 10px 10px 10px 40px;
 }
-@media(max-width: 490px){
-    .back{
-        top: -56px;
-    }
+@media (max-width: 490px) {
+  .back {
+    top: -56px;
+  }
 }
-@media(max-width: 770px){
-    .back{
-        top: -60px;
-    }
+@media (max-width: 770px) {
+  .back {
+    top: -60px;
+  }
 }
 
-@media(max-width: 380px){
-    .back{
-        top: -15px;
-    }
+@media (max-width: 380px) {
+  .back {
+    top: -15px;
+  }
 }
 .back h4 {
-    color: wheat;
-    font-size: 18px;
-    transform: translateY(8px);
-    transition: transform 500ms 0s cubic-bezier(0.2, 0, 0, 1);
-    font-family: "Times New Roman", Times, serif;
-    letter-spacing: 2px;
-    font-weight: 700;
+  color: wheat;
+  font-size: 18px;
+  transform: translateY(8px);
+  transition: transform 500ms 0s cubic-bezier(0.2, 0, 0, 1);
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .back span {
-    opacity: 0;
-    color: white;
-    font-size: 12px;
-    font-weight: 300;
-    display: inline-block;
-    transform: translateY(10px);
-    transition: transform 500ms 0s cubic-bezier(0.2, 0, 0, 1),
-        opacity 500ms 0s cubic-bezier(0.2, 0, 0, 1);
+  opacity: 0;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  display: inline-block;
+  transform: translateY(10px);
+  transition: transform 500ms 0s cubic-bezier(0.2, 0, 0, 1),
+    opacity 500ms 0s cubic-bezier(0.2, 0, 0, 1);
 }
 
 .back div {
-    top: 15px;
-    left: 0;
-    content: "";
-    width: 30px;
-    height: 30px;
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    border-radius: 50%;
-    transform: scale(1);
-    background-color: #e9e7f2;
-    transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1.6);
+  top: 15px;
+  left: 0;
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(1);
+  background-color: #e9e7f2;
+  transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1.6);
 }
 
 .back div::after {
-    top: 0;
-    left: 0;
-    content: "";
-    width: 60px;
-    height: 30px;
-    position: absolute;
-    background-position: 0 0;
-    background-image: url("https://s3-eu-west-1.amazonaws.com/thomascullen-codepen/back.svg");
-    transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1);
+  top: 0;
+  left: 0;
+  content: "";
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  background-position: 0 0;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/thomascullen-codepen/back.svg");
+  transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1);
 }
 
 .back:hover h4 {
-    color: wheat;
+  color: wheat;
 }
 
 .back:hover h4,
 .back:hover span {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .back:hover div {
-    transform: scale(1.1);
-    background-color: white;
-    box-shadow: 0 2px 10px 0 rgba(185, 182, 198, 0),
-        0 1px 3px 0 rgba(175, 172, 189, 0.25);
+  transform: scale(1.1);
+  background-color: white;
+  box-shadow: 0 2px 10px 0 rgba(185, 182, 198, 0),
+    0 1px 3px 0 rgba(175, 172, 189, 0.25);
 }
 
 .back:hover div::after {
-    transform: translateX(-30px);
+  transform: translateX(-30px);
 }
 
 /* Back Button End */

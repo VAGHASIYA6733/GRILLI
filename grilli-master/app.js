@@ -1966,7 +1966,6 @@ function renderCafeCards() {
 
   paginatedCafes.forEach((cafe) => {
     const cardContainer = document.createElement("div");
-    // cardContainer.classList.add("col");
 
     const card = document.createElement("div");
     card.classList.add("card", "h-100");
@@ -1998,7 +1997,6 @@ function renderCafeCards() {
 }
 
 function viewMore(id) {
-  // Assuming you have another HTML file named "cafe-detail.html" for detailed cafe information
   window.location.href = `cafe-detail.html?id=${id}`;
 }
 

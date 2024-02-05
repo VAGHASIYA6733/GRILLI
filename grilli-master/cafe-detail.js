@@ -2296,7 +2296,7 @@ detailCard.innerHTML = `
               We value your feedback! If you've had the pleasure of dining
               at our restaurant, we would love to hear about your
               experience. Your opinion helps us improve and ensures that we
-              continue to provide excellent service.
+              continue to provide excellent service.
             </p>
             
           </div>

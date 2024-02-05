@@ -1,319 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Boostrap Link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet" />
 
-    <title>Product Card</title>
-    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
-    <script>
-      // Nope
-      // ...except to show the animation on load
-      let b = document.querySelector("button");
-      setTimeout(() => b.focus(), 100);
-      setTimeout(() => b.blur(), 1000);
-    </script>
-  </head>
+  <!-- Boostrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-  <body>
-    <div class="back_btn">
-      <a href="../../cafe_menu.html" class="back" id="back_home">
-        <div></div>
-        <h4>Span & Bite</h4>
-        <span>Back to home</span>
-           </a
-      >
-    </div>
-    <section class="background-section">
-      <div class="container">
-        <!-- <video autoplay muted loop id="myVideo">
+  <title>Product Card</title>
+  <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+  <script>
+    // Nope
+    // ...except to show the animation on load
+    let b = document.querySelector("button");
+    setTimeout(() => b.focus(), 100);
+    setTimeout(() => b.blur(), 1000);
+  </script>
+</head>
+
+<body>
+  <div class="back_btn">
+    <a href="../../cafe_menu.html" class="back" id="back_home">
+      <div></div>
+      <h4>Span & Bite</h4>
+      <span>Back to home</span>
+         
+    </a>
+  </div>
+  <section class="background-section">
+    <div class="container">
+      <!-- <video autoplay muted loop id="myVideo">
           <source
             src="../../images/star_-_5191 (Original).mp4"
             type="video/mp4"
           />
           Your browser does not support HTML5 video.
         </video> -->
-        <div class="row mt-5 mb-5">
-          <div class="card main_card col-8">
-            <div class="shoeBackground">
-              <div class="gradients">
-                <div class="gradient second" color="blue"></div>
-                <div class="gradient" color="red"></div>
-                <div class="gradient" color="green"></div>
-                <div class="gradient" color="orange"></div>
-                <div class="gradient" color="black"></div>
-              </div>
-              <a href="#" class="share">
-                <button class="like-button">
-                  <div class="like-wrapper">
-                    <div class="ripple"></div>
-                    <svg
-                      class="heart"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"
-                      ></path>
-                    </svg>
-                    <div class="particles" style="--total-particles: 6">
-                      <div
-                        class="particle"
-                        style="--i: 1; --color: #7642f0"
-                      ></div>
-                      <div
-                        class="particle"
-                        style="--i: 2; --color: #afd27f"
-                      ></div>
-                      <div
-                        class="particle"
-                        style="--i: 3; --color: #de8f4f"
-                      ></div>
-                      <div
-                        class="particle"
-                        style="--i: 4; --color: #d0516b"
-                      ></div>
-                      <div
-                        class="particle"
-                        style="--i: 5; --color: #5686f2"
-                      ></div>
-                      <div
-                        class="particle"
-                        style="--i: 6; --color: #d53ef3"
-                      ></div>
-                    </div>
-                  </div>
-                </button>
-              </a>
-
-              <img
-                src="img/3 story cafe_1.jpg"
-                alt=""
-                class="shoe show"
-                color="blue"
-              />
-              <img
-                src="img/3 story cafe_2.jpg"
-                alt=""
-                class="shoe"
-                color="red"
-              />
-              <img
-                src="img/3 story cafe_3.jpg"
-                alt=""
-                class="shoe"
-                color="green"
-              />
-              <img
-                src="img/3 story cafe_4.webp"
-                alt=""
-                class="shoe"
-                color="orange"
-              />
-              <img
-                src="img/3 story cafe_5.webp"
-                alt=""
-                class="shoe"
-                color="black"
-              />
+      <div class="row mt-5 mb-5">
+        <div class="card main_card col-8">
+          <div class="shoeBackground">
+            <div class="gradients">
+              <div class="gradient second" color="blue"></div>
+              <div class="gradient" color="red"></div>
+              <div class="gradient" color="green"></div>
+              <div class="gradient" color="orange"></div>
+              <div class="gradient" color="black"></div>
             </div>
-            <div class="info mt-5 mb-5">
-              <div class="shoeName">
-                <div>
-                  <h1 class="big">3 Story Cafe</h1>
+            <a href="#" class="share">
+              <button class="like-button">
+                <div class="like-wrapper">
+                  <div class="ripple"></div>
+                  <svg class="heart" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z">
+                    </path>
+                  </svg>
+                  <div class="particles" style="--total-particles: 6">
+                    <div class="particle" style="--i: 1; --color: #7642f0"></div>
+                    <div class="particle" style="--i: 2; --color: #afd27f"></div>
+                    <div class="particle" style="--i: 3; --color: #de8f4f"></div>
+                    <div class="particle" style="--i: 4; --color: #d0516b"></div>
+                    <div class="particle" style="--i: 5; --color: #5686f2"></div>
+                    <div class="particle" style="--i: 6; --color: #d53ef3"></div>
+                  </div>
                 </div>
-                <h3 class="small">
-                  Titaanium The Business Hub, G-17, Bhimrad Rd, opp. Aakash
-                  Empire, beside White Temple, Surat
-                </h3>
+              </button>
+            </a>
+
+            <img src="img/3 story cafe_1.jpg" alt="" class="shoe show" color="blue" />
+            <img src="img/3 story cafe_2.jpg" alt="" class="shoe" color="red" />
+            <img src="img/3 story cafe_3.jpg" alt="" class="shoe" color="green" />
+            <img src="img/3 story cafe_4.webp" alt="" class="shoe" color="orange" />
+            <img src="img/3 story cafe_5.webp" alt="" class="shoe" color="black" />
+          </div>
+          <div class="info mt-5 mb-5">
+            <div class="shoeName">
+              <div>
+                <h1 class="big">3 Story Cafe</h1>
               </div>
-              <div class="description">
-                <h3 class="title">Description</h3>
-                <p class="text">
-                  A charming three-story sanctuary where aromas weave stories,
-                  flavors dance, and patrons savor nourishment amidst
-                  captivating décor and ambiance.
-                </p>
-              </div>
-              <div class="color-container">
-                <h3 class="title">IMAGE</h3>
-                <div class="colors">
-                  <span class="color active" color="blue"
-                    ><img src="./img/3 story cafe_1.jpg" alt=""
-                  /></span>
-                  <span class="color color_2" color="red"
-                    ><img src="./img/3 story cafe_2.jpg" alt=""
-                  /></span>
-                  <span class="color color_3" color="green"
-                    ><img src="./img/3 story cafe_3.jpg" alt=""
-                  /></span>
-                  <span class="color color_4" color="orange"
-                    ><img src="./img/3 story cafe_4.webp" alt=""
-                  /></span>
-                  <span class="color color_5" color="black"
-                    ><img src="./img/3 story cafe_5.webp" alt=""
-                  /></span>
-                </div>
-              </div>
-              <div class="buy-price">
-                <a href="#" class="buy"><span class="menu_btn">Menu</span></a>
-                <div class="price">
-                  <a
-                    href="#"
-                    class="buy_2"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    <span class="menu_btn_2">Table Book</span></a
-                  >
-                </div>
+              <h3 class="small">
+                Titaanium The Business Hub, G-17, Bhimrad Rd, opp. Aakash
+                Empire, beside White Temple, Surat
+              </h3>
+            </div>
+            <div class="description">
+              <h3 class="title">Description</h3>
+              <p class="text">
+                A charming three-story sanctuary where aromas weave stories,
+                flavors dance, and patrons savor nourishment amidst
+                captivating décor and ambiance.
+              </p>
+            </div>
+            <div class="color-container">
+              <h3 class="title">IMAGE</h3>
+              <div class="colors">
+                <span class="color active" color="blue"><img src="./img/3 story cafe_1.jpg" alt="" /></span>
+                <span class="color color_2" color="red"><img src="./img/3 story cafe_2.jpg" alt="" /></span>
+                <span class="color color_3" color="green"><img src="./img/3 story cafe_3.jpg" alt="" /></span>
+                <span class="color color_4" color="orange"><img src="./img/3 story cafe_4.webp" alt="" /></span>
+                <span class="color color_5" color="black"><img src="./img/3 story cafe_5.webp" alt="" /></span>
               </div>
             </div>
-          </div>
-          <div
-            class="col-4 p-4 mt-5 mb-5 Ads"
-            style="background-color: blueviolet"
-          >
-            <p>Ads</p>
-          </div>
-        </div>
-
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header" style="border: none">
-                <h1 class="modal-title fw-bolder fs-5" id="exampleModalLabel">
-                  Table Book
-                </h1>
-                <button
-                  type="button"
-                  id="btn-close_button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <form class="row g-3 needs-validation" novalidate>
-                  <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label"
-                      >Name</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="validationCustom01"
-                      value=""
-                      required
-                    />
-                    <div class="valid-feedback">Looks good!</div>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="validationCustom04" class="form-label"
-                      >Person</label
-                    >
-                    <select
-                      class="form-select"
-                      id="validationCustom04"
-                      required
-                    >
-                      <option selected value="">Min - 2</option>
-                      <option>5 - 10</option>
-                      <option>10 - 15</option>
-                      <option>15 - 20</option>
-                    </select>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="validationCustom04" class="form-label"
-                      >Select D & L</label
-                    >
-                    <select class="form-select" id="validationCustom04">
-                      <option selected value="">Dinner</option>
-                      <option>Lunch</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="validationCustom03" class="form-label"
-                      >Phone Number</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="validationCustom03"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Please provide a valid number.
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="validationCustom03" class="form-label"
-                      >Email</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="validationCustom03"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Please provide a valid email.
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="invalidCheck"
-                        required
-                      />
-                      <label class="form-check-label" for="invalidCheck">
-                        Agree to Terms and Conditions
-                      </label>
-                      <div class="invalid-feedback">
-                        You must agree before submitting.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary" type="submit">
-                      Submit form
-                    </button>
-                  </div>
-                </form>
+            <div class="buy-price">
+              <a href="#" class="buy"><span class="menu_btn">Menu</span></a>
+              <div class="price">
+                <a href="#" class="buy_2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="menu_btn_2">Table Book</span></a>
               </div>
             </div>
           </div>
         </div>
-        <!-- Modal End -->
+        <div class="col-4 p-4 mt-5 mb-5 Ads" style="background-color: blueviolet">
+          <p>Ads</p>
+        </div>
+      </div>
 
-        <!-- Details -->
-        <!-- <div class="card mb-3 mt-5">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="border: none">
+              <h1 class="modal-title fw-bolder fs-5" id="exampleModalLabel">
+                Table Book
+              </h1>
+              <button type="button" id="btn-close_button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="" required />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom04" class="form-label">Person</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected value="">Min - 2</option>
+                    <option>5 - 10</option>
+                    <option>10 - 15</option>
+                    <option>15 - 20</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom04" class="form-label">Select D & L</label>
+                  <select class="form-select" id="validationCustom04">
+                    <option selected value="">Dinner</option>
+                    <option>Lunch</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="validationCustom03" required />
+                  <div class="invalid-feedback">
+                    Please provide a valid number.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="validationCustom03" required />
+                  <div class="invalid-feedback">
+                    Please provide a valid email.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to Terms and Conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">
+                    Submit form
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal End -->
+
+      <!-- Details -->
+      <!-- <div class="card mb-3 mt-5">
           <div class="row g-0">
             <div class="col-md-6">
               <div class="card-body">
@@ -332,89 +212,74 @@
             </div>
           </div>
         </div> -->
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
-          <div class="col">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h5 class="card-title text-center"><lord-icon
-                  src="https://cdn.lordicon.com/wsdieofl.json"
-                  trigger="loop"
-                  state="loop-oscillate"
-                  class="p-2 pe-5"
-                  style="width:30px;height:30px">
-              </lord-icon><span class="me-4">Time</span></h5>
-                <p class="card-text">Monday - Sunday</p>
-                <p class="card-text" style="margin-top: -10px">
-                  12:45pm - 10:45pm
-                </p>
-                <h5 class="card-title">Facilities</h5>
-                <p class="card-text">Wifi, TV, AC, Parking</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <h5 class="card-title"><lord-icon
-                  src="https://cdn.lordicon.com/hgqdtxby.json"
-                  trigger="loop"
-                  state="morph-select"
-                  class="p-2 pe-5"
-                  style="width:30px;height:30px">
-              </lord-icon> <span class="me-5">Ratings</span></h5>
-                <p class="card-text">4.5</p>
-
-                <h5 class="card-title"><lord-icon
-                  src="https://cdn.lordicon.com/dypzookn.json"
-                  trigger="loop"
-                  class="p-2 pe-5" 
-                  style="width:30px;height:30px">
-              </lord-icon> <span class="me-5">Average Cost</span></h5>
-                <p class="card-text">
-                  ₹<span>500</span> for two people (approx.)
-                </p>
-                <p class="card-text text-muted" style="margin-top: -10px">
-                  Exclusive of applicable taxes and charges, if any
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <p class="card-text">
-                  <h5 class="card-title"><lord-icon
-                    src="https://cdn.lordicon.com/kiynvdns.json"
-                    trigger="loop"
-                    class="p-2 pe-5"
-                    style="width:30px;height:30px">
-                </lord-icon> <span class="me-5">Feedback</span></h5>
-                  We value your feedback! If you've had the pleasure of dining
-                  at our restaurant, we would love to hear about your
-                  experience. Your opinion helps us improve and ensures that we
-                  continue to provide excellent service.
-                </p>
-                
-              </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title text-center"><lord-icon src="https://cdn.lordicon.com/wsdieofl.json" trigger="loop"
+                  state="loop-oscillate" class="p-2 pe-5" style="width:30px;height:30px">
+                </lord-icon><span class="me-4">Time</span></h5>
+              <p class="card-text">Monday - Sunday</p>
+              <p class="card-text" style="margin-top: -10px">
+                12:45pm - 10:45pm
+              </p>
+              <h5 class="card-title">Facilities</h5>
+              <p class="card-text">Wifi, TV, AC, Parking</p>
             </div>
           </div>
         </div>
-        <!-- Details End -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title"><lord-icon src="https://cdn.lordicon.com/hgqdtxby.json" trigger="loop"
+                  state="morph-select" class="p-2 pe-5" style="width:30px;height:30px">
+                </lord-icon> <span class="me-5">Ratings</span></h5>
+              <p class="card-text">4.5</p>
+
+              <h5 class="card-title"><lord-icon src="https://cdn.lordicon.com/dypzookn.json" trigger="loop"
+                  class="p-2 pe-5" style="width:30px;height:30px">
+                </lord-icon> <span class="me-5">Average Cost</span></h5>
+              <p class="card-text">
+                ₹<span>500</span> for two people (approx.)
+              </p>
+              <p class="card-text text-muted" style="margin-top: -10px">
+                Exclusive of applicable taxes and charges, if any
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <p class="card-text">
+              <h5 class="card-title"><lord-icon src="https://cdn.lordicon.com/kiynvdns.json" trigger="loop"
+                  class="p-2 pe-5" style="width:30px;height:30px">
+                </lord-icon> <span class="me-5">Feedback</span></h5>
+              We value your feedback! If you've had the pleasure of dining
+              at our restaurant, we would love to hear about your
+              experience. Your opinion helps us improve and ensures that we
+              continue to provide excellent service.
+              </p>
+
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+      <!-- Details End -->
+    </div>
+  </section>
 
-    <!-- Boostrap  JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Boostrap  JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-    <!-- Load Icon  -->
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <!-- Load Icon  -->
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
-    <!-- Custom JS -->
-    <script src="app.js"></script>
-  </body>
+  <!-- Custom JS -->
+  <script src="app.js"></script>
+</body>
+
 </html>
